@@ -4,15 +4,16 @@ Widget customTextField({String? title, String? hint, controller}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      email.text.color(redColor).fontFamily(semibold).size(16).make(),
+      title!.text.color(redColor).fontFamily(semibold).size(16).make(),
       5.heightBox,
       TextFormField(
+        // controller: controller,
         decoration: InputDecoration(
           hintStyle: TextStyle(
             fontFamily: semibold,
             color: textFieldGrey,
           ),
-          hintText: emailHint,
+          hintText: hint,
           isDense: true,
           fillColor: lightGrey,
           filled: true,
@@ -22,6 +23,8 @@ Widget customTextField({String? title, String? hint, controller}) {
           ),
         ),
       ),
+      5.heightBox,
+
     ],
   );
 }
