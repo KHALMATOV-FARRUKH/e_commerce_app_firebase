@@ -22,3 +22,10 @@ const home = "Home",
     cart = "Cart",
     account = "Account";
 
+const searchAnything = "Search anything...",
+    todayDeal = "Today's Deal",
+    flashSale = "Flash Sale",
+    topSellers = "Top Sellers",
+    brand = "Brand",
+    topCategories = "Top Categories",
+    featuredCategories = "Feature Categories";
