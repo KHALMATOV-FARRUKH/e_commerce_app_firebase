@@ -1,6 +1,6 @@
 import 'package:e_commerce_app_firebase/consts/consts.dart';
 import 'package:e_commerce_app_firebase/consts/lists.dart';
-import 'package:e_commerce_app_firebase/view/home_screen/components/festured_button.dart';
+import 'package:e_commerce_app_firebase/view/home_screen/components/featured_button.dart';
 import 'package:e_commerce_app_firebase/widgets_common/home_buttons.dart';
 import 'package:flutter/material.dart';
 
