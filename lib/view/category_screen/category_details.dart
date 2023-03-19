@@ -1,5 +1,7 @@
 import 'package:e_commerce_app_firebase/consts/consts.dart';
+import 'package:e_commerce_app_firebase/view/category_screen/item_details.dart';
 import 'package:e_commerce_app_firebase/widgets_common/bg_widget.dart';
+import 'package:get/get.dart';
 
 class CategoryDetails extends StatelessWidget {
   final String? title;
@@ -24,7 +26,8 @@ class CategoryDetails extends StatelessWidget {
                   children: List.generate(
                       6,
                       (index) => "Baby Clothing"
-                          .text.size(12)
+                          .text
+                          .size(12)
                           .fontFamily(semibold)
                           .color(darkFontGrey)
                           .makeCentered()
@@ -35,6 +38,53 @@ class CategoryDetails extends StatelessWidget {
                           .margin(EdgeInsets.symmetric(horizontal: 4))
                           .make()),
                 ),
+              ),
+              20.heightBox,
+              Expanded(
+                child: GridView.builder(
+                    physics: BouncingScrollPhysics(),
+                    shrinkWrap: true,
+                    itemCount: 6,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        mainAxisExtent: 250,
+                        mainAxisSpacing: 16,
+                        crossAxisSpacing: 7),
+                    itemBuilder: (context, index) {
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            imgP5,
+                            height: 150,
+                            width: 200,
+                            fit: BoxFit.cover,
+                          ),
+                          10.heightBox,
+                          "Laptop 4GB/64GN"
+                              .text
+                              .fontFamily(semibold)
+                              .color(darkFontGrey)
+                              .make(),
+                          10.heightBox,
+                          "\$600"
+                              .text
+                              .color(redColor)
+                              .fontFamily(bold)
+                              .size(16)
+                              .make()
+                        ],
+                      )
+                          .box
+                          .margin(EdgeInsets.symmetric(horizontal: 4))
+                          .white
+                          .roundedSM
+                          .outerShadowSm
+                          .padding(const EdgeInsets.all(10))
+                          .make().onTap(() {
+                            Get.to(()=>ItemDetails(title: "Dummy item"));
+                      });
+                    }),
               ),
             ],
           ),
