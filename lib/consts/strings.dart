@@ -41,8 +41,15 @@ const womenClothing = "Women Clothing",
     menClothingFashion = "Men Clothing & Fashion",
     compAccess = "Computer & Accessories",
     automobile = "Automobile",
-    kidtoys ="Kid & Toys",
+    kidtoys = "Kid & Toys",
     sports = "Sports",
     jewelery = "Jewelery",
     cellphone = "Cellphone",
     furniture = "Furniture";
+
+const video = "Video",
+    reviews = "Reviews",
+    sellerPolity = "Seller Polity",
+    returnPolity = "Return Polity",
+    supportPolity = "Support Polity",
+    productsYouMayAlsoLike = "Products you may also like";
