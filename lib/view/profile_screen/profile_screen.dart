@@ -1,8 +1,11 @@
 import 'package:e_commerce_app_firebase/consts/consts.dart';
 import 'package:e_commerce_app_firebase/consts/lists.dart';
+import 'package:e_commerce_app_firebase/controller/auth_controller.dart';
+import 'package:e_commerce_app_firebase/view/auth_screen/login_screen.dart';
 import 'package:e_commerce_app_firebase/view/profile_screen/components/details_card.dart';
 import 'package:e_commerce_app_firebase/widgets_common/bg_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -49,7 +52,10 @@ class ProfileScreen extends StatelessWidget {
                           color: whiteColor,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () async{
+                        await Get.put(AuthController()).signoutMethod(context);
+                        Get.offAll(()=>const LoginScreen());
+                      },
                       child: logout.text.fontFamily(semibold).white.make(),
                     )
                   ],
