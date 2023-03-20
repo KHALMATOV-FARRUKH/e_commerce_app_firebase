@@ -11,6 +11,7 @@ const nameHint = "Baaba Devs";
 const forgetPassword = "Forget Password";
 const login = "Log in";
 const signUp = "Sign up";
+const logout = "Log out";
 const createNewAccount = "or, create a new account";
 const loginWith = "Log in with";
 const privacyPolicy = "Privacy Policy";
@@ -37,6 +38,7 @@ const searchAnything = "Search anything...",
     featuredProduct = "Featured Product",
     featuredCategories = "Feature Categories";
 
+// category strings
 const womenClothing = "Women Clothing",
     menClothingFashion = "Men Clothing & Fashion",
     compAccess = "Computer & Accessories",
@@ -47,9 +49,13 @@ const womenClothing = "Women Clothing",
     cellphone = "Cellphone",
     furniture = "Furniture";
 
+// item details strings
 const video = "Video",
     reviews = "Reviews",
     sellerPolity = "Seller Polity",
     returnPolity = "Return Polity",
     supportPolity = "Support Polity",
     productsYouMayAlsoLike = "Products you may also like";
+
+// profile strings
+const wishlist = "My Wishlist", orders = "My orders", messages = "Messages";

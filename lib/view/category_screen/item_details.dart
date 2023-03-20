@@ -232,7 +232,7 @@ class ItemDetails extends StatelessWidget {
                               ],
                             )
                                 .box
-                                .margin(EdgeInsets.symmetric(
+                                .margin(const EdgeInsets.symmetric(
                                 horizontal: 4))
                                 .white
                                 .roundedSM
